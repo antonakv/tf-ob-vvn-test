@@ -24,7 +24,7 @@ output "caller_arn" {
 output "caller_user" {
   value = data.aws_caller_identity.current.user_id
 }
-
+/* 
 resource "aws_instance" "ubuntu" {
   ami                    = "ami-0baa12826217a765e"
   instance_type          = "t2.micro"
@@ -34,4 +34,4 @@ resource "aws_instance" "ubuntu" {
   tags = {
     Name = "test"
   }
-}
+} */
